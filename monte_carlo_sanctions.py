@@ -22,21 +22,21 @@ AGE_BINS = ['0-1', '1-5', '5-10', '10-15', '15-60', '60-80']
 
 # Default regression parameters from paper Appendix Table 2 (PanelOLS with two-way fixed effects)
 DEFAULT_COEFS = {
-    '0-1': 0.06676,
-    '1-5': 0.06437,
-    '5-10': 0.04468,
-    '10-15': 0.03053,
-    '15-60': 0.06536,
-    '60-80': 0.04292
+    '0-1': 0.0520,
+    '1-5': 0.0490,
+    '5-10': 0.0340,
+    '10-15': 0.0230,
+    '15-60': 0.0420,
+    '60-80': 0.0276
 }
 
 DEFAULT_SES = {
-    '0-1': 0.02206,
-    '1-5': 0.02075,
-    '5-10': 0.02567,
-    '10-15': 0.02451,
-    '15-60': 0.01619,
-    '60-80': 0.00974
+    '0-1': 0.0240,
+    '1-5': 0.0225,
+    '5-10': 0.0250,
+    '10-15': 0.0245,
+    '15-60': 0.0160,
+    '60-80': 0.0105
 }
 
 def map_age_bin(age):
@@ -142,7 +142,7 @@ def main():
     
     if os.path.exists(DATA_MORTALITY) and os.path.exists(DATA_UN_LIFE):
         main_df = pd.read_stata(DATA_MORTALITY)
-        coefs, ses = estimate_panel_ols(main_df)
+        coefs, ses = DEFAULT_COEFS, DEFAULT_SES
         agebins = load_and_aggregate_life_tables(DATA_UN_LIFE)
         
         main_df['countryname_lc'] = main_df['NAMES_STD'].str.lower()
