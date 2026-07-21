@@ -2,9 +2,10 @@
 
 This repository contains an independent replication study and interactive Streamlit web dashboard for the research paper:
 
-> **Rodríguez, F., Rendón, R., & Weisbrot, M. (2025).**  
+> **Rodríguez, F., Rendón, R., & Weisbrot, M. (2025).**  https://lancet.streamlit.app/
 > *"Effects of international sanctions on age-specific mortality: a cross-national panel data analysis."*  
 > **Lancet Global Health**, 13(9), e1358–e1366. DOI: [10.1016/S2214-109X(25)00189-5](https://doi.org/10.1016/S2214-109X(25)00189-5)
+> https://sechan9999.github.io/lancet-sanctions-replication/
 
 ---
 
