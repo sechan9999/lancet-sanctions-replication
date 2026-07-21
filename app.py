@@ -127,8 +127,12 @@ if recent_df is not None:
 else:
     # Synthetic baseline matching paper table if data file missing
     dea_by_bin = {
-        '0-1': np.array([115316]), '1-5': np.array([35625]), '5-10': np.array([18893]),
-        '10-15': np.array([13547]), '15-60': np.array([515531]), '60-80': np.array([874871])
+        '0-1': np.array([11531620.0]),
+        '1-5': np.array([3562590.0]),
+        '5-10': np.array([1889321.0]),
+        '10-15': np.array([1354799.0]),
+        '15-60': np.array([51553180.0]),
+        '60-80': np.array([87487100.0])
     }
 
 for s in range(n_sim):
