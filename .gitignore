@@ -1,0 +1,20 @@
+# Large binary data files (downloadable from Harvard Dataverse doi:10.7910/DVN/ZJSHU4)
+*.dta
+
+# Raw papers & documentation binaries
+*.pdf
+*.docx
+*.zip
+
+# Python cache & build files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# System / IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
